@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locker</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+<style>
+    .locker_box {
+        text-align: center;
+        padding: 60px 0;
+        border-radius: 20px;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        text-transform: uppercase;
+        color: #ffffff;
+    }
+
+    .Deposit {
+        background-color: rgb(106, 206, 6);
+    }
+
+    .Withdraw {
+        background-color: rgb(218, 203, 5);
+    }
+
+    .Balance {
+        background-color: rgb(255, 0, 212);
+    }
+
+    .input {
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+    }
+
+    .input input {
+        width: 80%;
+        padding: 5px 10px;
+        margin-bottom: 20px;
+    }
+
+    #deposit_btn , #withdraw_btn{
+        display: block;
+        padding: 10px 15px;
+        border-radius: 5px;
+    }
+</style>
+
+<body class="m-5">
+    <h1 class="text-center mb-5">Welcome to bank locker</h1>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="locker_box Deposit">
+                <h2>Deposit</h2>
+                <h2>$<span id="output_deposit">00</span></h2>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="locker_box Withdraw">
+                <h2>Withdraw</h2>
+                <h2>$<span id="output_withdraw">00</span></h2>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="locker_box Balance">
+                <h2>Balance</h2>
+                <h2>$<span id="output_Balance">78900</span></h2>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="input text-center">
+                <input id="input_deposite_values" type="text" placeholder="Your Deposit">
+                <div><button id="deposit_btn"> Deposit</button></div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="input text-center">
+                <input id="input_withdraw_values" type="text" placeholder="Your Withdraw">
+                <div><button id="withdraw_btn"> Withdraw</button></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        alert('Log in Successful');
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+    <script src="alljs.js"></script>
+</body>
+
+</html>
